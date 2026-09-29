@@ -1,0 +1,19 @@
+{
+  "name": "default-evaluation",
+  "description": "Default evaluation configuration for the Autonomous Coding-Agent Harness",
+  "max_steps": 50,
+  "budget_usd": null,
+  "max_seconds": 1800,
+  "required_env": ["AI_API_KEY"],
+  "success_criteria": [
+    "tests_passed == true",
+    "final_commit != null",
+    "resolved == true"
+  ],
+  "scoring": {
+    "resolved_weight": 0.6,
+    "token_efficiency_weight": 0.2,
+    "steps_weight": 0.1,
+    "cost_weight": 0.1
+  }
+}

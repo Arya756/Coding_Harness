@@ -1,0 +1,31 @@
+# Environment files with real credentials — NEVER commit
+.env
+.env.local
+
+# Python-generated files
+__pycache__/
+*.pyc
+*.pyo
+.Python
+pip-log.txt
+pip-delete-this-after-install.txt
+
+# pytest
+.pytest_cache/
+
+# Harness run artefacts (written inside the target repo)
+.harness/
+harness_hackathon/.harness/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# nltk data (downloaded by make setup)
+harness_hackathon/nltk_data/
